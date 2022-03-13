@@ -1,0 +1,58 @@
+<div class="container">
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">This is a survey where we would like you to answer the following questions to the best of your ability.</p>
+
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name: </label>
+      <input id="name" placeholder="Enter your name" class="form-control" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" class="form-control" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" placeholder="Enter your age" name="age" min="10" max="99" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <p>Please select a role that best describes you.</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select an Option</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Please Rate this website:</p>
+
+      <label>
+        <input class="radio-group" name="user-rating" type="radio" value="great" checked>Great</label>
+      <label>
+        <input class="radio-group" name="user-rating" type="radio" value="improvement">Needs Improvement</label>
+      <label>
+        <input class="radio-group" name="user-rating" type="radio" value="terrible">Terrbile</label>
+    </div>
+
+    <div class="form-group">
+      <p>Pick your favorite foods:<span> (Check all that apply)</span></p>
+      <label> <input type="checkbox" class="input-checkbox" value="pizza"> Pizza</label>
+      <label> <input type="checkbox" class="input-checkbox" value="cheeseburger"> Cheeseburger</label>
+      <label> <input type="checkbox" class="input-checkbox" value="tacos"> Tacos</label>
+    </div>
+
+    <div class="form-group.
+                ">
+      <p>Please leave any additional comments below:</p>
+      <textarea class="form-control" name="comment" placeholder="Leave Comments Here..."></textarea>
+    </div>
+    <div>
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+</div>
